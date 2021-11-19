@@ -1,5 +1,5 @@
 FROM node:alpine
-RUN mkdir -p /app/frontend/
+#RUN mkdir -p /app/frontend/
 WORKDIR /app
-COPY frontend /frontend
-CMD npm start
+COPY frontend frontend
+CMD node frontend/test.js
